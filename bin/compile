@@ -24,6 +24,9 @@ if [ -z "$DEPLOY_TASKS" ]; then
   exit 0
 fi
 
+echo "PATH:"
+echo $PATH
+
 tasks=(`echo ${DEPLOY_TASKS}`)
 cd $build_dir
 for task in ${tasks[@]}; do
